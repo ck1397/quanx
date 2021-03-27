@@ -1,0 +1,156 @@
+{
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-03-26 13:47:22",
+  "list": [
+    {
+      "name": "清空日志",
+      "type": "cron",
+      "time": "30 59 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/deletelog.js"
+      }
+    },
+    {
+      "name": "软更新升级",
+      "type": "cron",
+      "time": "30 58 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
+      }
+    },
+    {
+      "name": "活动-长牛来了",
+      "type": "cron",
+      "time": "3,30 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockcow.js"
+      }
+    },
+    {
+      "name": "腾讯自选股",
+      "type": "cron",
+      "time": "00 16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txstockqx.js"
+      }
+    },
+    {
+      "name": "吾爱破解",
+      "type": "cron",
+      "time": "0 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+      }
+    },
+    {
+      "name": "滴滴出行",
+      "type": "cron",
+      "time": "0 1,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js"
+      },
+      "running": false
+    },
+    {
+      "name": "伊利",
+      "type": "cron",
+      "time": "0 12 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://github.com/id77/QuantumultX/raw/master/task/yiLi.js"
+      }
+    },
+    {
+      "name": "中青极速版（早起打卡）",
+      "type": "cron",
+      "time": "0 5 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
+      }
+    },
+    {
+      "name": "中青极速版（每日任务）",
+      "type": "cron",
+      "time": "*/14 0-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
+      }
+    },
+    {
+      "name": "中青自动阅读Sunert",
+      "type": "cron",
+      "time": "6 1-16/3 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/LiuYuanwork/elecV2P/main/Taks-elecV2P/youthread_elecV2.js"
+      }
+    },
+    {
+      "name": "切换会话",
+      "type": "cron",
+      "time": "* * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js"
+      }
+    },
+    {
+      "name": "饿了么-打卡领红包(zZPiglet)",
+      "type": "cron",
+      "time": "3 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js"
+      },
+      "running": false
+    },
+    {
+      "name": "今日头条极速版(ZhiYi-N)",
+      "type": "cron",
+      "time": "5,35 8-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/jrtt.js"
+      }
+    },
+    {
+      "name": "中青看点浏览赚&看看赚",
+      "type": "cron",
+      "time": "5 8 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth_gain.js"
+      },
+      "running": false
+    },
+    {
+      "name": "爱奇艺",
+      "type": "cron",
+      "time": "0 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
+      }
+    },
+    {
+      "name": "财富岛提现(whyour)",
+      "type": "cron",
+      "time": "0,1,2,3,4,5,6,7,8,9,10 0 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/utterliar1/Quantumult-X/3d60e0e4d4f3ee3023cf1ba8650c4299ff12fa97/Scripts/shylocks/jx_cfdtx.js"
+      },
+      "running": false
+    }
+  ]
+}
